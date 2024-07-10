@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="shortcut icon" href="img/ct.jpg" type="img/x-icon">
+<style>
+    .bg-blue{
+        background-color: rgb(66, 43, 179);
+    
+        }
+        .fcolor{
+        color: rgb(255, 255, 255);
+        }
+        .fcolor2{
+            color: rgb(117, 2, 2);
+        }
+.fcolo3{
+    color:black
+}
+    </style>
+<style>
+    .bgi{
+        background-image: url(img/fondo.jpg);
+        background-size: cover;
+        background-repeat: center;
+    }
+    .bgi2{background-image: url(img/invitacion\ 2.jpg);
+        background-size: cover;
+        background-repeat: center;
+        padding: 8em;
+    }
+    .card{
+        background-color: rgba(45, 15, 143, 0.313);
+    }
+    .h1{
+        margin-top: 60%;
+    }
+    .italic{
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'cursive';
+        font-size: 4rem;
+    }
+    .btn-color{
+        background-color: whitesmoke;
+        color: gray;
+    }
+    #countdown{
+        font-size: 1.1rem;
+        text-align: center;
+        font-style: oblique;
+        color:rgb(117, 2, 2);
+        table-layout: auto;
+        font-size: 3.5rem;
+    }
+</style>
+</head>
+<body class="bgi">
+    <div class="container">
+        <h1 class="fcolor text-center h1">Mi Cumpleaños 22 </h1>
+        <h1 class="italic text-center fcolor"></i>Alan</i></h1>
+        <h2 class="fcolor text-center"><small>Sábado 03 de Agosto del 2024</small></h2>
+        <div class="elementor-element elementor-element-fcac36f elementor-widget elementor-widget-html" data-id="fcac36f" data-element_type="widget" data-widget_type="html.default">
+            <div class="elementor-widget-container">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1EZk1gal98tb4lNI862KzO?utm_source=generator" width="100%" height="122" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <h2 class="fcolor text-center"><small>Ubicación</small></h2>
+            <ul class="elementor-icon-list-items"></ul>
+           
+                    
+				</div>
+                <div class="card p-4">
+                    <h2 class="fcolor text-center"><small>Mi Casa</small></h2>
+                    <h2 class="fcolor text-center"><small>7:00 PM</small></h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1860400755027!2d-99.20605942488268!3d19.447544140203693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021229051355%3A0x20def2625061ba4a!2sC.%202%20525%2C%20Francisco%20I.%20Madero%2C%20Miguel%20Hidalgo%2C%2011480%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1716471237676!5m2!1ses-419!2smx" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mt-3 text-center">
+                        <a class="btn btn-color" href="https://maps.app.goo.gl/NizvZp5fdt6H9BDG7" target="_blank">
+                            <span>Ver en Google Maps</span>
+                        </a>
+                    </div>
+
+                </div>
+                <ul class="elementor-icon-list-items"></ul>
+                <div class="elementor-container elementor-column-gap-default bgi2">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30df59f3" data-id="30df59f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5bb9f239 elementor-widget elementor-widget-heading animated fadeInUp" data-id="5bb9f239" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                                <h1 class="text-center fcolor2 mt-5">Cuenta Regresiva</h1>		
+				</div>
+				<ul class="elementor-icon-list-items"></ul>
+			<h2 class="text-center fcolor2"><i>Solo faltan...</i></h2>		
+            <ul class="elementor-icon-list-items"></ul>
+            <div id="countdown"></div>
+<h1>
+    <script>
+        // Fecha y hora objetivo para la cuenta regresiva (formato YYYY-MM-DDTHH:MM:SS)
+        const targetDate = new Date("2024-08-03T19:00:00").getTime();
+
+        // Actualizar la cuenta regresiva cada segundo
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            // Calcular días, horas, minutos y segundos
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Mostrar el resultado en el elemento con id="countdown"
+            
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // Si la cuenta regresiva ha terminado
+            if (timeLeft < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "¡Feliz Cumpleaños!";
+            }
+        }, 1000);
+    </script> 
+</h1>
+        
+            </div>
+                    </div>
+<ul class="elementor-icon-list-items"></ul>
+<h1 class="text-center fcolor2 "><i>Confirma tu asistencia</i></h1>
+
+                </div>
+                <ul class="elementor-icon-list-items"></ul>
+                <footer class="container-fluid p-2 fcolor" style="background-color: rgb(0, 0, 0);">
+                    
+                    <div class="row align-items-center">
+                        <div class="col">
+                    <h3 class=" text-center">Creada Por</h3>
+                    <a href="#"><p class="text-center fcolor">Alan Hernandez Fabela</p></a>
+                    </div>
+                    <div class="card-center">
+                        <img src="img/logo-removebg-preview.png" class="rounded mx-auto d-block" alt="" style="width:10%">    
+                        
+                    </body>
